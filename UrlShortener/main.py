@@ -2,7 +2,7 @@
 
 from wox import Wox, WoxAPI
 from UrlShortener import ClsShortener
-import os
+import pyperclip
 
 class UShort(Wox):
 
@@ -16,14 +16,14 @@ class UShort(Wox):
             "SubTitle": "Data: {}".format(res_url),
             "IcoPath":"Images/app.ico",
 			"JsonRPCAction": {
-                        "method": "openUrl",
+                        "method": "copy_to",
                         "parameters": [res_url],
                         "dontHideAfterAction": True}
         })
         return results
 
     def copy_to(self,data):
-        os.system("echo '%s' | pbcopy" % data)
+        pyperclip.copy(data)
         WoxAPI.change_query(data)
 
 
