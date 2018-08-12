@@ -6,7 +6,7 @@
 	"Author": "dhemmings",
 	"Version": "1.0.0",
 	"Language": "python",
-	"Website": "https://github.com/talengu/Wox.Plugin.BookmarkSearcher",
+	"Website": "https://github.com/mattalexanderfields/Wox.Plugin.UrlShortener",
 	"IcoPath": "Images\\app.ico",
 	"ExecuteFileName": "main.py"
 }
